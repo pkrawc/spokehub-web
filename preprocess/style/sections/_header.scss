@@ -1,0 +1,18 @@
+header {
+  width: 100%;
+  height: 6vh;
+  background: $white;
+  color: $black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1 {
+    margin: 4px 16px;
+    font-size: 1.6rem;
+  }
+  span {
+    margin: 4px 16px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}

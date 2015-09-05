@@ -1,0 +1,13 @@
+section.now {
+  background-color: $white;
+  color: $black;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  &.open {
+    display: flex;
+  }
+  &.closed {
+    display: none;
+  }
+}

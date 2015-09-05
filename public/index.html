@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <base href="/">
+  <title>SPOKEHUB NOW</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body ng-app="spokehub" ng-controller="MainController">
+
+  <header ng-include="'partials/header.html'"></header>
+  <main ng-view></main>
+  <footer ng-include="'partials/footer.html'"></footer>
+
+
+<script src="components/jquery/dist/jquery.min.js"></script>
+<script src="components/TextTailor.js/jquery.texttailor.js"></script>
+
+
+<script src="components/angular/angular.min.js"></script>
+<script src="components/angular-route/angular-route.min.js"></script>
+
+<!-- Angular Modules -->
+<script src="js/client.js"></script>
+<script src="js/clientRoutes.js"></script>
+<script src="js/services/UserService.js"></script>
+<script src="js/controllers/MainCtrl.js"></script>
+<script src="js/controllers/UserCtrl.js"></script>
+<script src="js/directives/columns.js"></script>
+
+<!-- live reload script -->
+<script src="//localhost:35729/livereload.js"></script>
+</body>
+</html>
