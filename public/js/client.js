@@ -5,5 +5,6 @@ angular
     'MainCtrl',
     'UserCtrl',
     'UserService',
-    'directive.columns'
+    'directive.columns',
+    'directive.sections'
   ]);

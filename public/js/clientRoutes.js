@@ -7,6 +7,26 @@ angular
             templateUrl: 'views/home.html',
             controller: 'MainController'
           })
+          .when('/how', {
+            templateUrl: 'views/home.html',
+            controller: 'MainController',
+            reloadOnSearch: false
+          })
+          .when('/we', {
+            templateUrl: 'views/home.html',
+            controller: 'MainController',
+            reloadOnSearch: false
+          })
+          .when('/work', {
+            templateUrl: 'views/home.html',
+            controller: 'MainController',
+            reloadOnSearch: false
+          })
+          .when('/now', {
+            templateUrl: 'views/home.html',
+            controller: 'MainController',
+            reloadOnSearch: false
+          })
           .when('/users', {
             templateUrl: 'views/user.html',
             controller: 'UserController'
@@ -14,5 +34,7 @@ angular
           .otherwise({
             redirectTo: '/'
           });
+
+          $locationProvider.html5Mode(true);
       }
     ]);
