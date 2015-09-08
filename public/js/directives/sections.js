@@ -1,16 +1,17 @@
 angular
   .module('directive.sections', [])
   .directive('sections', function() {
-    var controller = function($scope) {
-      
-    }
+
+    var sections = function(scope, element, attrs) {};
+
+    var controller = function($scope) {};
+
     return {
       restrict: 'E',
-      scope: {
-
-      },
+      scope: {},
       replace: true,
       templateUrl: 'views/directives/sections.html',
-      controller: controller
-    }
+      controller: controller,
+      link: sections
+    };
   });

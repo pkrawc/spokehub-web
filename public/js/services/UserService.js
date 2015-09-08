@@ -12,6 +12,6 @@ angular
     delete: function(id) {
       return $http.delete('/api/users/' + id);
     }
-  }
+  };
 
 }]);

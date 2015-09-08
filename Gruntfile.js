@@ -20,10 +20,11 @@ module.exports = function(grunt) {
       },
       target: {src:'public/style/style.css'}
     },
-    uglify: {
-      target: {
-        files: {'public/js/spokehub.min.js':['preprocess/js/**/*.js']}
-      }
+    jshint: {
+      options: {
+        laxcomma: true
+      },
+      files: ['Gruntfile.js', 'public/js/**/*.js']
     },
     watch: {
       css: {
@@ -35,6 +36,7 @@ module.exports = function(grunt) {
       },
       js: {
         files: ['public/js/**/*.js'],
+        tasks: ['jshint'],
         options: {
           livereload: true
         }
@@ -42,4 +44,4 @@ module.exports = function(grunt) {
     }
   });
   grunt.registerTask('default', ['watch']);
-}
+};

@@ -1,0 +1,11 @@
+<div class="principle-wrapper">
+  <img ng-repeat="slide in slides" ng-src="{{slide.image}}" ng-hide="!isCurrentSlideIndex($index)" class="how-image">
+  <ul class="dots">
+    <li class="dot" ng-repeat="slide in slides">
+      <span ng-class="{'active':isCurrentSlideIndex($index)}"
+      ng-click="setCurrentSlideIndex($index);"></span>
+    </li>
+  </ul>
+  <span class="arrow prev" ng-click="nextSlide();"></span>
+  <span class="arrow next" ng-click="prevSlide();"></span>
+</div>
