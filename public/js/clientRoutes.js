@@ -9,12 +9,12 @@ angular
           })
           .when('/how', {
             templateUrl: 'views/home.html',
-            controller: 'HowController',
+            controller: 'MainController',
             reloadOnSearch: false
           })
           .when('/we', {
             templateUrl: 'views/home.html',
-            controller: 'WeController',
+            controller: 'MainController',
             reloadOnSearch: false
           })
           .when('/work', {

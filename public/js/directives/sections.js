@@ -8,7 +8,7 @@ angular
 
     return {
       restrict: 'E',
-      scope: {},
+      scope: false,
       replace: true,
       templateUrl: 'views/directives/sections.html',
       controller: controller,

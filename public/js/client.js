@@ -7,7 +7,7 @@ angular
     'WeCtrl',
     'UserCtrl',
     'UserService',
-    'directive.columns',
+    'directive.column',
     'directive.sections',
     'directive.conversationCard'
   ]);
