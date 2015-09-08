@@ -1,7 +1,6 @@
-var express  = require('express');
-var passport = require('passport');
-var path     = require('path');
-var User     = require('./models/user');
+var express = require('express');
+var path = require('path');
+var User = require('./models/user');
 
 
 module.exports = function(app) {
@@ -14,18 +13,6 @@ module.exports = function(app) {
       }
       res.json(users);
     });
-  });
-
-  app.get('/login', function(req, res) {
-    res.render('login', {user: req.user});
-  });
-
-  app.post('/login', passport.authenticate('local'), function(req, res) {
-    res.redirect('/');
-  });
-
-  app.get('/api/ping', function(req, res){
-    res.status(200).send("pong!");
   });
 
   // frontend routes ===========

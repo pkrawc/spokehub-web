@@ -1,6 +1,7 @@
 angular
   .module('MainCtrl', [])
   .controller('MainController', function($scope) {
+<<<<<<< HEAD
 
     $scope.year = new Date().getFullYear();
 
@@ -43,3 +44,7 @@ angular
     }
 
   });
+=======
+  $scope.tagline = 'Spokehub NOW';
+});
+>>>>>>> parent of 9e46223... extend user schema / split up directives

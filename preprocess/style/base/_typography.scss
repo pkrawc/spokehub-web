@@ -76,7 +76,7 @@ h1,
 
 h2,
 .h2 {
-    @include font-size(1.4);
+    @include font-size(1.8);
     @media all and (min-width: $medium) { @include font-size(2); }
 }
 

@@ -9,9 +9,9 @@
 </head>
 <body ng-app="spokehub" ng-controller="MainController">
 
-  <header ng-include="'views/partials/header.html'"></header>
+  <header ng-include="'partials/header.html'"></header>
   <main ng-view></main>
-  <footer ng-include="'views/partials/footer.html'"></footer>
+  <footer ng-include="'partials/footer.html'"></footer>
 
 
 <script src="components/jquery/dist/jquery.min.js"></script>
@@ -25,12 +25,9 @@
 <script src="js/clientRoutes.js"></script>
 <script src="js/services/UserService.js"></script>
 <script src="js/controllers/MainCtrl.js"></script>
-<script src="js/controllers/HowCtrl.js"></script>
-<script src="js/controllers/WeCtrl.js"></script>
 <script src="js/controllers/UserCtrl.js"></script>
 <script src="js/directives/column.js"></script>
 <script src="js/directives/sections.js"></script>
-<script src="js/directives/conversationCard.js"></script>
 
 <!-- live reload script -->
 <script src="//localhost:35729/livereload.js"></script>

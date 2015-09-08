@@ -4,61 +4,10 @@ section.how {
   width: 100%;
   height: 100%;
   align-items: center;
-  justify-content: center;
   &.open {
     display: flex;
   }
   &.closed {
     display: none;
-  }
-
-  .principle-wrapper {
-    display: flex;
-    height: 100%;
-    width: 98%;
-    position: relative;
-    .how-image {
-      width: 100%;
-      flex: 0 1 auto;
-    }
-
-    .dots {
-      display: flex;
-      position: absolute;
-      bottom: -8px;
-      left: calc(50% - 44px);
-      justify-content: center;
-      list-style: none;
-      padding: 0;
-      .dot {
-        width: 16px;
-        height: 16px;
-        margin: 4px;
-        border-radius: 50%;
-        border: 4px solid $white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        span {
-          width: 100%;
-          height: 100%;
-          &.active {
-            background: $white;
-          }
-        }
-      }
-    }
-
-    .arrow {
-      width: 24px;
-      height: 24px;
-    }
-
-    @media all and (min-width: $small) {
-      width: 80%;
-    }
-  }
-  @media all and (min-width: $small) {
-    padding: 16px 4px;
   }
 }
